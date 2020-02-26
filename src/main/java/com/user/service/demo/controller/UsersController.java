@@ -74,7 +74,7 @@ public class UsersController {
 	 * @return status code.
 	 */
 	@DeleteMapping(value = "/removeUser/{userId}")
-	public ResponseEntity<?> remoteUser(@PathVariable(value = "userId") Long userId) {
+	public ResponseEntity<?> removeUser(@PathVariable(value = "userId") Long userId) {
 		usersService.removeUser(userId);
 		return ResponseEntity.ok().build();
 	}
